@@ -9,3 +9,5 @@ root - 관리자 계정
 # - 일반 사용자 프롬프트
 $ - 관리자 프롬프트
 
+apt(Advanced Package Tool) - 패키지를 관리하는 도구
+
