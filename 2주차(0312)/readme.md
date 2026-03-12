@@ -14,3 +14,7 @@ apt [행동] [패키지명]
 ex) sudo apt install gcc (gcc패키지를 관리자 계정을 통하여 다운로드 한다.)
 gcc(GNU Compiler Collection) - 컴파일러 모음(컴파일을 사용하는 여러 언어를 실행시켜주는 도구)
 
+. - 현재 디렉토리
+.. - 부모 디렉토리
+~ - home 디렉토리
+/ - root 디렉토리
