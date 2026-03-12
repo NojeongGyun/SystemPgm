@@ -1,7 +1,10 @@
 $ s(super) - 관리자 계정으로 로그인
 & sudo(super do) 명령어 - 관리자 계정으로 할 수 있는 명령을 할 수 있음(일반사용자는 하지 못하는 권한 부여)
 exit - 관리자 계정이라면 일반 사용자로 돌아감
-$ man(mange) - 
+
+$ man(mange) -
+man 명령어 - 명령어에 대한 상세한 정보를 알려준다.
+
 $ info(information) - 
 
 root - 관리자 계정
