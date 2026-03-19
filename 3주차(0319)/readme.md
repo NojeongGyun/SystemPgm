@@ -16,4 +16,18 @@
 
 
      mkdir 0319 - 0319폴더를 생성한다.
+
+$ cat > test.txt
+    123456789
+    abcdefghi
+    컨트롤 + d 
+    = test.txt에 내용을 넣음( cat은 파일안에 내용을 넣음)
+
+
+$ touch test2.txt
+    = test2.txt에 아무것도 내용이 없는 파일을 만듬
+
+
+
+    
 </pre>
