@@ -22,11 +22,16 @@ $ cat > test.txt
     abcdefghi
     컨트롤 + d 
     = test.txt에 내용을 넣음( cat은 파일안에 내용을 넣음)
-
+    
+cat test.txt
+    = test.txt안의 내용을 보여줌
 
 $ touch test2.txt
     = test2.txt에 아무것도 내용이 없는 파일을 만듬(만약 파일이 있는 거라면 타임스탬프가 해당 명령어를 쓴 시간으로 바뀜)    
     
 
+
+
+    
     
 </pre>
