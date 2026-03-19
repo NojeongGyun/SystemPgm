@@ -28,10 +28,17 @@ cat test.txt
 
 $ touch test2.txt
     = test2.txt에 아무것도 내용이 없는 파일을 만듬(만약 파일이 있는 거라면 타임스탬프가 해당 명령어를 쓴 시간으로 바뀜)    
+
+ll /bin
+    = 파일의 경로를 보여줌
     
+ll /usr/bin 
+    = 
 
 
 
+
+    
     
     
 </pre>
