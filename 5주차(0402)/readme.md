@@ -14,4 +14,8 @@
     return 0;
     }
   </code>
+
+  - scanf("%s", string); 에서 마지막 널문자가 버퍼에 남아 다음 scanf인 scanf("%c", &c)가 영향을 받는다.
+  
+    
 </pre>
