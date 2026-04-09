@@ -8,7 +8,7 @@ stderr이 2
 ssize_t(data type) - 부호 있는 정수(signed)
 size_t(data type) - 부호 있는 정수(0 ~ )
 
-ex)
+ex) - read() -
 #include <unistd.h>
 ssize_t read ( int fd, void *buf, size_t nbytes );
 파일 읽기에 성공하면 읽은 바이트 수, 파일 끝을 만나면 0,
@@ -40,6 +40,10 @@ printf ("%s 파일 크기 : %ld 바이트 \n", argv[1], total);
 exit(0);
 }
 
-  
+- write() - 
+#include <unistd.h>
+ssize_t write (int fd, void *buf, size_t nbytes);
+파일에 쓰기를 성공하면 실제 쓰여진 바이트 수를 반환하고,
+실패하면 -1을 반환한다.
 
 </pre>
