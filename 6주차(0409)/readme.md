@@ -46,5 +46,6 @@ ssize_t write (int fd, void *buf, size_t nbytes);
 파일에 쓰기를 성공하면 실제 쓰여진 바이트 수를 반환하고,
 실패하면 -1을 반환한다.
 
-ㄴ size_t nbytes만큼 씀
+ㄴ fd에 buf에 들어있는 nbytes길이 만큼 보냄. 하지만 쓰기에 실패한다면 -1을 반환함
+
 </pre>
