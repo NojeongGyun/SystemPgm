@@ -52,7 +52,11 @@ ex) return 5;
 
 
 
+' '(백틱) - 명령어를 에디터에서 실행 할 때 쓰는 묶음
+ex) testing=`date`  - testing이라는 변수에 백틱으로 date를 묶음으로써 string이 아닌 명령어로 사용됨
+    echo “The date and time are: ” $testing - $testing이라는 변수에 date의 명령어 실행되어 출력됨
 
+  
 
 
 
