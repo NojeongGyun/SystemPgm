@@ -24,6 +24,13 @@ ex) $0 - argv[0]
     $1 - argv[1]...
 
 
+ echo $?
+return 뒤에 있는 값을 가져 올 수 있음
+ex) return 5;
+
+    echo $? - 5출력
+  
+
 
 
 
