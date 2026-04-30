@@ -34,7 +34,7 @@ ex) $0 - argv[0]
   value2=$value1
   echo The resulting value is $value2
 
-  ./sc test4 를 내리면 test4가 argv[1]의 값이고 고로 $1이 되므로, 실행파일을 만들고, 바로 실행시켜준다.
+  ./sc test4 를 내리면 test4가 argv[1]의 값이고 고로 $1이 되므로, 실행 할 수 있는 파일을 만들고, 바로 실행시켜준다.
 
   
 
