@@ -6,6 +6,11 @@ ex)date - 서버의 현재 시간입니다.  who - 사용자가 로그인한 시
   date; who - 두 명령어를 한번에 실행 시킴
 
 
+chmod +x test1 - test1 파일을 실행할 수 있는 파일로 만듬
+./test1 - test1 파일을 실행함
+  
+  
+
 
 
 
