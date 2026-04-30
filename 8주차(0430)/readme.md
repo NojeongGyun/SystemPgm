@@ -18,6 +18,11 @@ ex) days=10
     echo “$guest checked in $days days ago”  - $guest라는 변수를 사용함
   
 
+$숫자 
+순서대로 오는 인자값을 의미
+ex) $0 - argv[0]
+    $1 - argv[1]...
+
 
 
 
