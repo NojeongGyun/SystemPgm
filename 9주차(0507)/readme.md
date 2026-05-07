@@ -29,6 +29,11 @@ ex) $ (sleep 10; echo 1번 끝) &
     실행 결과 : 2번끝 1번끝 3번끝
     (백그라운드에서는 echo를 써도 출력이 화면에 안됨. 그렇기에 결과 값이 고정됨)
 
+-  set-user-id(set user ID upon execution) - 
+root의 권한을 사용자에게 권한을 주어 root 명령을 실행 가능하게 할 수 있게함
+ex) -rw<strong>s</strong>r-xr-x 1 root root 68208 Feb  6  2024 /usr/bin/passwd 
+
+
     
     
 </pre>
