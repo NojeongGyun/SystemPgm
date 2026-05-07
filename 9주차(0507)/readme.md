@@ -39,6 +39,9 @@ $ chmod u+s 파일 OR $ chmod 4755 파일 -> 파일에 s권한을 줌(개인)
     * set-group-id 실행권한 설정 *
 $ chmod 2755 파일 OR $ chmod g+s 파일 -> 파일에 s권한을 줌(그룹)
 
+
+디렉토리를 생성하면 i-node의 번호와 다른 i-node) 그리고 접근권한 등을 가지게 됨
+
     
     
 </pre>
