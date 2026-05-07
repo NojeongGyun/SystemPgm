@@ -31,7 +31,8 @@ ex) $ (sleep 10; echo 1번 끝) &
 
 -  set-user-id(set user ID upon execution) - 
 root의 권한을 사용자에게 권한을 주어 root 명령을 실행 가능하게 할 수 있게함
-ex) -rw<strong>s</strong>r-xr-x 1 root root 68208 Feb  6  2024 /usr/bin/passwd 
+ex) -rw<strong>s</strong>r-xr-x 1 root root 68208 Feb  6  2024 /usr/bin/passwd    <- s가 부여되어 있으면 루트 권한을 가져 실행 할 수 있음
+    
 
 
     
