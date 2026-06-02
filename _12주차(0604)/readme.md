@@ -46,3 +46,37 @@ int main() {
 
     return 0;
 }
+
+
+
+
+1. whoami
+2. pwd
+3. hostname
+4. uname -a
+5. date
+6. cal
+7. id
+8. env
+9. uptime
+10. free -h
+11. df -h
+12. du -sh .
+13. ls
+14. ls -l
+15. ps
+16. ps aux
+17. top -b -n 1
+18. ip addr
+19. ping -c 1 8.8.8.8
+20. mkdir report
+21. cd report
+22. touch report.txt
+23. echo
+24. cat report.txt
+25. head report.txt
+26. tail report.txt
+27. wc report.txt
+28. cp report.txt backup.txt
+29. mv backup.txt final.txt
+30. chmod 755 final.txt
