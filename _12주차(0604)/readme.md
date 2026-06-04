@@ -82,4 +82,6 @@ int main() {
 30. chmod 755 final.txt
 
 9pdf
+부모프로세스에 의해 fork로 나눈 자식 프로세스의 pid 반환 값은 0이다.
+
 
