@@ -1,90 +1,14 @@
-#include <stdio.h>
-#include <stdlib.h>
+<pre>
+- Fork -
+현재 실행 중인 프로세스를 복제하여 새로운 자식 프로세스를 생성하는 시스템 호출 입니다.
+프로세스는 각 PID를 가집니다. 부모프로세스와 자식 프로세스를 구분하기 위해 PID반환값을 달리하는데 부모프로세스는 정수값을 가지고, 자식 프로세스는 PID반환값을 0으로 가집니다.
+이를 활용하여 PID가 0이면 자식 프로세스에게 명령을 내리도록 할 수 있고, 혹은 0이 아니면 부모 프로세스에게 명령을 내리도록 설계를 할 수 있습니다.
+하지만 PID반환값이 0이라고 해서 자식 프로세스의 PID가 0은 아닙니다. 모든 프로세스는 운영체제가 부여하는 양수 PID를 가집니다. 자식 프로세스도 한 프로세스이기에 PID값을 가집니다.
+다만 PID값이랑 PID반환값이랑 구별해야하는 점은 PID반환값은 부모/자식을 구분하기 위해 fork()가 돌려주는 값이며, PID값은 그 프로세스의 고유 번호라는 것입니다.
+fork()를 사용하면 부모 프로세스와 자식 프로세스가 생성되며, 어느 프로세스가 먼저 실행될지는 운영체제의 스케줄러가 결정합니다. 부모 프로세스가 자식 프로세스의 종료를 기다리게 하려면 wait() 함수를 사용하는 방법도 있습니다.
 
-int main() {
-
-    printf("===== 시스템 점검 및 보고서 생성 =====\n");
-
-    system("whoami");                     // 1
-    system("pwd");                        // 2
-    system("hostname");                   // 3
-    system("uname -a");                   // 4
-    system("date");                       // 5
-    system("cal");                        // 6
-    system("id");                         // 7
-    system("env");                        // 8
-    system("uptime");                     // 9
-    system("free -h");                    // 10
-    system("df -h");                      // 11
-    system("du -sh .");                   // 12
-    system("ls");                         // 13
-    system("ls -l");                      // 14
-    system("ps");                         // 15
-    system("ps aux");                     // 16
-    system("top -b -n 1");                // 17
-    system("ip addr");                    // 18
-    system("ping -c 1 8.8.8.8");          // 19
-
-    system("mkdir -p report");            // 20
-
-    system("cd report");                  // 21 (실행은 되지만 system마다 별도 쉘)
-
-    system("touch report/report.txt");    // 22
-
-    system("echo 'System Report' > report/report.txt"); // 23
-
-    system("cat report/report.txt");      // 24
-    system("head report/report.txt");     // 25
-    system("tail report/report.txt");     // 26
-    system("wc report/report.txt");       // 27
-
-    system("cp report/report.txt report/backup.txt");   // 28
-    system("mv report/backup.txt report/final.txt");    // 29
-    system("chmod 755 report/final.txt");               // 30
-
-    printf("\n===== 보고서 생성 완료 =====\n");
-
-    return 0;
-}
+- exec -
 
 
-
-
-1. whoami
-2. pwd
-3. hostname
-4. uname -a
-5. date
-6. cal
-7. id
-8. env
-9. uptime
-10. free -h
-11. df -h
-12. du -sh .
-13. ls
-14. ls -l
-15. ps
-16. ps aux
-17. top -b -n 1
-18. ip addr
-19. ping -c 1 8.8.8.8
-20. mkdir report
-21. cd report
-22. touch report.txt
-23. echo
-24. cat report.txt
-25. head report.txt
-26. tail report.txt
-27. wc report.txt
-28. cp report.txt backup.txt
-29. mv backup.txt final.txt
-30. chmod 755 final.txt
-
-9pdf
-부모프로세스에 의해 fork로 나눈 자식 프로세스의 pid 반환 값은 0이다. 자식 프로세스는 실제로는 PID가 존재하는데, 변수 pid만 0이다.(이게 자식 프로세스와 부모프로세스를 구분한다.)
-어떤 프로세스가 fork()를 호출해서 새로운 자식을 만들면, 그 프로세스는 부모 역할이 되고 fork()는 자식의 PID(양수)를 반환한다.
-
-exec()
-
-fork()를 써서 부모프로세스와 자식프로세스를 나누면, 부모프로세스가 먼저 실행이 완료되고, 다음 자식 프로세스가 실행됩니다. 이걸 막기 위해 wait()라는 프로세스 실행 잠시 중지라는 명령어가 존재합니다.
+    
+</pre>
